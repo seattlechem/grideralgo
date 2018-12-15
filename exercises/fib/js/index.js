@@ -7,7 +7,8 @@
 // forms the first ten entries of the fibonacci series.
 // Example:
 //   fib(4) === 3
-
-function fib(n) {}
+// iterative and recursive
+function fib(n) {
+}
 
 module.exports = fib;
