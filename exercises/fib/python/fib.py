@@ -8,3 +8,27 @@
 # Example:
 #   fib(4) === 3
 # iterative and recursive
+
+
+# memoization
+def memoize_factorial(f):
+    """Memoize function to save and run factorial."""
+    memo = {}
+
+    def inner(num):
+        if num not in memo:
+            memo[num] = f(num)
+        return memo[num]
+    return inner
+
+
+@memoize_factorial
+def facto(num):
+    """Factorial function."""
+    if num == 1:
+        return 1
+    else:
+        return num * facto(num - 1)
+
+
+print(facto(3))
