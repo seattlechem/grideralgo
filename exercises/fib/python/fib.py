@@ -30,6 +30,3 @@ def facto(num):
         return 1
     else:
         return num * facto(num - 1)
-
-
-print(facto(3))
